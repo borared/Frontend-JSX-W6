@@ -1,4 +1,8 @@
 export default function Scores({ courseName, courseResults }) {
+
+  function decideScore(score){
+    return score < 50 ? "warning": "";
+  }
   return (
     <div className="scores">
       <h1>{courseName}</h1>
@@ -15,7 +19,8 @@ export default function Scores({ courseName, courseResults }) {
             <tr key={index}>
               <td>{student.firstName}</td>
               <td>{student.lastName}</td>
-              <td>{student.score}</td>
+              <td className={decideScore(student.score)}>
+                {student.score}</td>
             </tr>
           ))}
         </tbody>
