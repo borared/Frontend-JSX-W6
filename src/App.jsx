@@ -4,7 +4,7 @@ import Score from "./components/Score.jsx";
 function App() {
   return (
     <>
-      <Header name="Student result for PNG batch 2026"/>
+      <Header name="Student result for PNC batch 2026"/>
 
       <main className="scores-container">
         <Score courseName="Java" courseResults={JAVA_RESULTS}></Score>
