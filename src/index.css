@@ -115,7 +115,7 @@ body {
 .statistic {
   display: flex;
   justify-content: space-around;
-  background-color: var(--white-color);
+  background-color: rgb(57, 148, 239);
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem 0.5rem;
@@ -130,7 +130,7 @@ body {
 
 .statistic .label {
   font-size: 0.75rem;
-  color: #666;
+  color: #000000;
   text-transform: uppercase;
   font-weight: 600;
 }
