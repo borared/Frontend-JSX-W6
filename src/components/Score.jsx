@@ -1,5 +1,6 @@
-export default function Scores({ courseName, courseResults }) {
 
+import Statistic from "./Static"
+export default function Scores({ courseName, courseResults }) {
   function decideScore(score){
     return score < 50 ? "warning": "";
   }
@@ -25,6 +26,7 @@ export default function Scores({ courseName, courseResults }) {
           ))}
         </tbody>
       </table>
+       <Statistic courseResults={courseResults} />
     </div>
   );
 }
