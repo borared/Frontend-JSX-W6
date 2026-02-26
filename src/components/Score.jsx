@@ -1,5 +1,5 @@
 
-import Statistic from "./Static"
+import Statistic from "./Statistic"
 export default function Scores({ courseName, courseResults }) {
   function decideScore(score){
     return score < 50 ? "warning": "";
